@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="let arr1=[];for(let i=0;i<=100;i++)arr.push(i);arr=arr.filter(n=>n%3!=0);console.log(arr);">Button one</button>
+<button onclick="let arr2=[];for(let i=0;i<=100;i++)arr.push(i);for(let i=101;i<=150;i++)arr.push(i);console.log(arr);">Button two</button>
+<button onclick="let arr3=[];for(let i=0;i<=100;i++)arr.push(i);arr=arr.map(n=>n+3);console.log(arr);">Button three</button>
+<button onclick="let arr4=[];for(let i=0;i<=100;i++)arr.push(i);console.log(arr.slice(20,41));">Button four</button>
+<button onclick="let arr5=[];for(let i=0;i<=100;i++)arr.push(i);shuffleArray(arr);console.log(arr);arr.sort((a,b)=>b-a);console.log(arr);">Button five</button>
+
+<script>
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+</script>
+
+</body>
+</html>
